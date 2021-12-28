@@ -1,0 +1,9 @@
+<h3>Calculator</h3>
+<input type="text" id="number1" [(ngModel)]="inputNumber1">
+<input type="text" id="number2" [(ngModel)]="inputNumber2">
+<button value="+" (click)="add(inputNumber1, inputNumber2)">+</button>
+<button value="-" (click)="subtract(inputNumber1, inputNumber2)">-</button>
+<button value="*" (click)="multiply(inputNumber1, inputNumber2)">*</button>
+<button value="/" (click)="div(inputNumber1, inputNumber2)">/</button>
+<p id="result">{{result}}</p>
+
