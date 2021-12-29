@@ -21,8 +21,6 @@ import { MatButtonModule } from '@angular/material/button';
 
 import {NavBarModule} from './shared/navbar';
 import {FooterModule} from './shared/footer';
-import { ArticleComponent } from './article/article.component';
-import { LikeComponent } from './like/like.component';
 import { NameCardComponent } from './name-card/name-card.component';
 
 export const appRoutes: Routes = [
@@ -35,7 +33,7 @@ export const appRoutes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, GettingStartedComponent, ArticleComponent, LikeComponent, NameCardComponent],
+  declarations: [AppComponent, HomeComponent, GettingStartedComponent, NameCardComponent],
   imports: [
     HttpClientModule,
     BrowserModule,
