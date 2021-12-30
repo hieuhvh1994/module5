@@ -1,0 +1,8 @@
+<div *ngIf="word; else tmpl">
+  <h2>Word: {{word.word}}</h2>
+  <h3>Mean: {{word.mean}}</h3>
+</div>
+
+<ng-template #tmpl>
+  <h2>Nothing to play</h2>
+</ng-template>

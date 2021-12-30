@@ -1,0 +1,10 @@
+<h1>Dictionary</h1>
+<table>
+  <tr>
+    <th>Word</th>
+  </tr>
+  <tr *ngFor="let word of dictionary">
+    <td><a [routerLink]="['/dictionary', word.word]">{{word.word}}</a></td>
+  </tr>
+</table>
+<router-outlet></router-outlet>
