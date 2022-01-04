@@ -1,0 +1,22 @@
+<h1>Cập nhật thông tin danh mục ghi chú</h1>
+<form [formGroup]="todoForm" (ngSubmit)="updateTodo(id)">
+  <table>
+    <tr>
+      <td>Nội dung:</td>
+      <td><input type="text" formControlName="content"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hoàn thành:</td>
+      <td><input type="radio" formControlName="complete" value="false"><span>Chưa</span></td>
+      <td><input type="radio" formControlName="complete" value="true"><span>Rồi</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <button>Cập Nhật</button>
+      </td>
+    </tr>
+  </table>
+</form>
