@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12" style="margin-top: 20px">
+            <mat-card style="margin: 50px 0">
+                <form class="form-register" #f="ngForm" (ngSubmit)="f.form.valid &&ngSubmit()" novalidate>
+                    <!--TITLE-->
+                    <mat-form-field style="width: 350px" appearance="outline">
+                        <mat-label>Title</mat-label>
+                        <input matInput placeholder="Tile" name="title" [(ngModel)]="form.title" #title="ngModel" minlength="3" maxlength="50" required>
+                        <mat-error *ngIf="title.hasError('required')">The title is required!</mat-error>
+                        <mat-error *ngIf="title.hasError('minlength')">The title must have more than 3 characters!</mat-error>
+                    </mat-form-field>
+                    <br>
+                    <!--AUTHOR-->
+                    <mat-form-field style="width: 350px" appearance="outline">
+                        <mat-label>Author</mat-label>
+                        <input matInput placeholder="author" name="author" [(ngModel)]="form.author" #author="ngModel" minlength="3" maxlength="50" required>
+                        <mat-error *ngIf="author.hasError('required')">The author is required!</mat-error>
+                        <mat-error *ngIf="author.hasError('minlength')">The author must have more than 3 characters!</mat-error>
+                    </mat-form-field>
+                    <br>
+                    <!--DESCRIPTION-->
+                    <mat-form-field style="width: 350px" appearance="outline">
+                        <mat-label>Description</mat-label>
+                        <input matInput placeholder="Description" name="description" [(ngModel)]="form.description" #description="ngModel" minlength="3" maxlength="50" required>
+                        <mat-error *ngIf="description.hasError('required')">The description is required!</mat-error>
+                        <mat-error *ngIf="description.hasError('minlength')">The description must have more than 3 characters!</mat-error>
+                    </mat-form-field>
+                    <br>
+
+                    <button mat-stroked-button color="accent" class="mat-button-toggle-group btn-outline-primary">Update Book
+                        <mat-icon color="accent" matSuffix>add_circle_outline</mat-icon>
+                    </button>
+                </form>
+            </mat-card>
+        </div>
+    </div>
+</div>

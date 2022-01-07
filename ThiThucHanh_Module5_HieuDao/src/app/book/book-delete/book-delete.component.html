@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row" style="margin-top: 20px">
+        <div class="col-12">
+            <mat-card style="margin: 50px 0">
+                <h3>Delete Book</h3>
+                <h6>Title: </h6>
+                <p>{{book.title}}</p>
+                <h6>Author: </h6>
+                <p>{{book.author}}</p>
+                <h6>Description:</h6>
+                <p>{{book.description}}</p>
+                <button style="margin-right: 20px" mat-raised-button  (click)="confirmYes()">Yes</button>
+                <button mat-raised-button  (click)="confirmNo()" >No</button>
+            </mat-card>
+        </div>
+    </div>
+</div>
